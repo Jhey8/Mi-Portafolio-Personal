@@ -1,0 +1,36 @@
+body {
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+.elemento {
+    transition: transform 0.2s ease;
+}
+
+.elemento:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.tarjeta:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 3px 1px #fff;
+}
+
+.tarjeta {
+    transition: transform 0.8s ease;
+}
+
+.perfil:hover {
+    transform: scale(1.02) rotate(360deg);
+    box-shadow: 0px 0px 3px 1px #fff;
+
+
+}
+
+.perfil {
+    transition: transform 0.8s ease;
+}
+
+#btnWhatsApp:hover{
+    transform: scale(1.02);
+}

@@ -1,0 +1,58 @@
+//whatsApp
+let btnWhatsApp = document.getElementById('btnWhatsApp');
+
+const mensaje = 'Hola Jheymy, buen día. Estoy interesado(a) en el desarrollo de una página web y me gustaría recibir información sobre tus servicios, costos y tiempos de entrega. Quedo atento a tu respuesta.';
+const telefono = "942231107";
+
+btnWhatsApp.addEventListener('click', () => {
+    window.open(`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`, target = "_blank");
+});
+
+
+
+
+//escribir
+const texto = "soy Jheymy";
+let escribirTexto = document.getElementById('escribirTexto');
+
+let i = 0;
+function escribir() {
+
+    if (i < texto.length) {
+        escribirTexto.textContent += texto.charAt(i);
+        i++;
+        setTimeout(escribir, 120);
+    }
+}
+escribir();
+
+
+
+//modal
+let btnEnviar = document.getElementById("btnEnviar");
+
+btnEnviar.addEventListener('click', () => {
+
+    const form = document.querySelector(".needs-validation");
+
+    if (!form.checkValidity()) {
+        form.classList.add("was-validated");
+        return;
+    }
+
+    const modalFormulario = document.getElementById('modalFormulario');
+    const modal = new bootstrap.Modal(modalFormulario);
+    modal.hide();
+
+    Swal.fire({
+        title: "¡Enviado!",
+        text: "Tu mensaje fue enviado correctamente",
+        icon: "success",
+        confirmButtonColor: "#0dcaf0"
+    }).then(() => {
+
+        form.submit();
+
+    });
+});
+
