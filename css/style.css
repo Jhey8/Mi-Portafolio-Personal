@@ -249,6 +249,10 @@ a {
 }
 
 .navbar-glass {
+    --bs-navbar-color: var(--text-muted);
+    --bs-navbar-hover-color: var(--text);
+    --bs-navbar-active-color: var(--text);
+    --bs-navbar-disabled-color: var(--text-dim);
     background: transparent;
     border-bottom: 1px solid transparent;
     padding-block: 1.15rem;
@@ -512,34 +516,6 @@ a {
 #inicio {
     padding-top: clamp(7rem, 14vh, 10rem);
     padding-bottom: 4rem;
-}
-
-.status-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: .6rem;
-    padding: .45rem 1rem .45rem .7rem;
-    border-radius: var(--radius-pill);
-    border: 1px solid var(--stroke);
-    background: var(--surface);
-    font-size: .82rem;
-    color: var(--text-muted);
-    backdrop-filter: var(--blur);
-}
-
-.pulse-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #22c55e;
-    box-shadow: 0 0 0 0 rgba(34, 197, 94, .7);
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0%   { box-shadow: 0 0 0 0 rgba(34, 197, 94, .7); }
-    70%  { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
 }
 
 .hero-title {
@@ -824,6 +800,9 @@ a {
 }
 
 .tech-card i {
+    height: 44px;
+    display: grid;
+    place-items: center;
     font-size: 2.5rem;
     line-height: 1;
     filter: grayscale(1) opacity(.65);

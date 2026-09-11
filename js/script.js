@@ -33,7 +33,7 @@
         const roles = [
             'Desarrollador Web',
             'Estudiante de Ing. de Sistemas',
-            'Frontend con JS y Bootstrap',
+            'Frontend con React y Tailwind CSS',
             'Backend con Node.js y MySQL'
         ];
 
