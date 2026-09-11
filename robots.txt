@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jheybm.online/sitemap.xml

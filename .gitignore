@@ -1,0 +1,10 @@
+# Copias de seguridad locales
+backup/
+
+# Ruido del sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Logs
+*.log
